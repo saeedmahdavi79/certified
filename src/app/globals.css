@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+  /* Bg-Color */
+  --bg-slate: #282627;
+  --bg-slate-bold: #1e1c1d;
+  --bg-brown: #2c2925;
+  --bg-brown-bold: #272526;
+  /* Text-Color */
+  --text-gold: #f6d658;
+}
+
+@layer components {
+  .custom-container {
+    @apply container mx-auto px-20;
+  }
+  .custom-bg {
+    background: rgba(246, 214, 88, 0.21);
+  }
+  .background-hero {
+    background-image: url("../../public/assets/img/Rectangle.png");
+    background-size: 100% 100%;
+  }
+  .background-arrow {
+    background-image: url("../../public/assets/svg/circle.svg");
+  }
+  .background-news-card {
+    background: rgba(39, 37, 38, 0.79);
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .line::before {
+    content: "";
+    border: 1px solid white;
+    width: 150px;
+  }
+}
